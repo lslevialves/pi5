@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"   
+         xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+   <h:head>   
+   
+         
+        <h:outputStylesheet library="css" name="layout.css"  />
+                        
+   </h:head>
+   <h:body>      
+         <ui:insert name="header" >
+               <div align="center">                 
+                <h1>Sistema Loja Virtual</h1>
+                </div>
+                <h:form> 
+               
+                    <p:menubar>  
+                         
+                       
+                        <p:menuitem value="Cadastro de Pessoas" url="lista_pessoa.xhtml" icon="ui-icon-disk" />
+                                              
+                         <p:menuitem value="Cadastro de Produtos" url="lista_produto.xhtml" icon="ui-icon-disk"/>
+                        
+                         <p:menuitem value = "Forma de Pagamento" url="lista_formapgto.xhtml" icon="ui-icon-disk" />
+                       
+                       </p:menubar>
+              
+                </h:form>    
+        
+         </ui:insert> 
+      
+      <br/>
+         
+         <div style="width: 800px; margin-left: auto; margin-right: auto;">
+             <ui:insert name="content" >            
+             </ui:insert>    
+           </div>
+      <br/>
+      
+      
+      <div style="position: absolute;bottom: 0; text-align:center; width:98%;">
+         <ui:insert name="footer" >
+ 
+         </ui:insert>
+      </div>
+   </h:body>
+</html>
+

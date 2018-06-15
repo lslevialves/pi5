@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	
+	<h:form>
+		<p:menu class="aw-menu" style="width: 100%">
+			<p:menuitem>
+				<h:link outcome="home"><i class="fa  fa-fw  fa-home"></i>Dashboard</h:link>
+			</p:menuitem>
+			<p:menuitem rendered="#{menuController.renderizarMenus()}">
+				<h:link outcome="pessoas"><i class="fa  fa-fw  fa-user"></i>Cadastrar Cliente</h:link>
+			</p:menuitem>
+			<p:menuitem rendered="#{menuController.renderizarMenus()}">
+				<h:link outcome="produtos"><i class="fa  fa-fw  fa-list"></i>Produtos</h:link>
+			</p:menuitem>
+			<p:menuitem>
+				<h:link outcome="login"><i class="fa  fa-fw  fa-user"></i>Administrador</h:link>
+			</p:menuitem>
+		</p:menu>
+	</h:form>
+</ui:composition>

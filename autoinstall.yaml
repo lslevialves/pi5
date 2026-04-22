@@ -1,0 +1,39 @@
+# Instalação automática Ubuntu Studio (Calamares)
+
+locale: pt_BR.UTF-8
+
+keyboard:
+  layout: br
+  variant: abnt2
+
+timezone: America/Sao_Paulo
+
+users:
+  - name: lleevvii
+    username: lleevvii
+    password: "$6$rounds=4096$saltsalt$9vWq0z6Q9rYp5F3Qx9rYxH1V1jYpFQz5l8n5y3FqvP8RrK7xRk1p9RrYQ1uFQn8Z1zG7wz3kVw0JzYz7r8s1/"
+    groups:
+      - wheel
+      - audio
+      - video
+    autologin: true
+
+hostname: ubuntustudio
+
+bootloader:
+  install: true
+
+packages:
+  - ubuntustudio-desktop
+
+drivers:
+  install: true
+
+thirdparty:
+  enable: true
+
+partitioning:
+  type: erase_disk
+
+updates:
+  install: true
